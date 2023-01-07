@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myblog
+    username: postgres
+    password: Pavan@143
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+    hibernate:
+      ddl-auto: update
+
+#  security:
+#    user:
+#      name: pavan
+#      password: pavan
+#      roles:
+#        - ADMIN
+
+app.jwt-secret: 9390b5a3d4f0e45ecc5b73f3a4681c905b9cc44d64b64261408c3abac27404d1
+app-jwt-expiration-milliseconds: 86400000
